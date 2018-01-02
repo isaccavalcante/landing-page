@@ -10,7 +10,7 @@ export default class IndexController {
 			if (code === 0)
 				this.toastr.success(message);
 			else
-				this.toastr.error(message, 'Erro');
+				this.toastr.error(message);
 		}).catch(err => {
 			this.toastr.error(err, 'Erro');
 		});
