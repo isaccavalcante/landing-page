@@ -1,0 +1,28 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandersoncs/landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wandersoncs/landing-page/issues"
+  },
+  "homepage": "https://github.com/wandersoncs/landing-page#readme",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-animate": "^1.6.8",
+    "angular-resource": "^1.6.8",
+    "angular-toastr": "^2.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
