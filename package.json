@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +26,8 @@
     "angular-toastr": "^2.1.1",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.4.1"
   }
 }
