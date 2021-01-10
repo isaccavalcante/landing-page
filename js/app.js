@@ -13,6 +13,6 @@ import IndexCtrl from './indexCtrl';
 import ApiResource from './api-resource';
 
 angular
-	.module('minhas-multas', [ngResource, ngAnimate, toastr])
+	.module('deploygram', [ngResource, ngAnimate, toastr])
 	.factory('API', ApiResource)
 	.controller('indexCtrl', IndexCtrl);
