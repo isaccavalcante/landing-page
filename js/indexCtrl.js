@@ -5,18 +5,16 @@ export default class IndexController {
 	}
 
 	subscribe(form) {
-		if (form && this.validate(form.plate, form.renavam)) {
-			form.plate = this.normalizePlate(form.plate);
-			this.api.subscribe(form).$promise.then(res => {
-				let { message, code } = res;
-				if (code === 0)
-					this.toastr.success(message);
-				else
-					this.toastr.error(message);
-			}).catch(err => {
-				this.toastr.error(err, 'Erro');
-			});
-		}
+		this.api.subscribe(form).$promise.then(res => {
+			let { message, code } = res;
+			if (code === 0)
+				this.toastr.success(message);
+			else
+				this.toastr.error(message);
+		}).catch(err => {
+			this.toastr.error(err, 'Erro');
+		});
+	
 	}
 
 	validate(plate, renavam) {

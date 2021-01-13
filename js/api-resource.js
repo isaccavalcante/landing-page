@@ -1,7 +1,7 @@
 export default function ApiResource($resource) {
-	return $resource('https://api.deploygram.com/subscribe', {}, {
+	return $resource('http://localhost:5000/subscribe', {}, {
 		subscribe: {
-			url: 'https://api.deploygram.com/subscribe',
+			url: 'http://localhost:5000/subscribe',
 			method: 'POST',
 			isArray: false
 		}
